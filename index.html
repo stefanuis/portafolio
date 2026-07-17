@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefany López · Full Stack Developer</title>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- ===== HERO ===== -->
+    <main class="page">
+        <section class="hero">
+            <div class="hero-grid">
+
+                <!-- Columna izquierda: texto -->
+                <div class="hero-copy">
+                    <span class="badge">
+                        <span class="badge-dot"></span>
+                        Available for work
+                    </span>
+
+                    <h1 class="hero-title">
+                        Hi, I'm a<br>
+                        <span class="hero-title-accent">Full Stack<br>Developer</span>
+                        
+                    </h1>
+
+                    <p class="hero-text">
+                        Desarrollo aplicaciones web modernas, escalables y orientadas a
+                        resultados utilizando Java, Spring Boot, React y bases de datos SQL.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#servicios" class="btn btn-primary">
+                            Ver proyectos <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contacto" class="btn btn-outline">
+                            <i class="fa-regular fa-envelope"></i> Contactarme
+                        </a>
+                    </div>
+
+                    <p class="hero-note">
+                    </p>
+                </div>
+
+                <!-- Columna derecha: tarjetas -->
+                <div class="hero-cards">
+                    <div class="profile-card">
+                        <div class="profile-card-info">
+                            <h3>Stefany López</h3>
+                            <p class="role">Full Stack Developer</p>
+                            <p class="location"><i class="fa-solid fa-location-dot"></i> Colombia</p>
+                        </div>
+
+                        <div class="code-snippet" aria-hidden="true">
+                            <div class="code-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <pre><code><span class="tok-kw">@RestController</span>
+<span class="tok-kw">public class</span> <span class="tok-cls">ProjectController</span> {
+
+    <span class="tok-kw">@Autowired</span>
+    <span class="tok-kw">private final</span> ProjectService service;
+
+    <span class="tok-kw">@GetMapping</span>(<span class="tok-str">"/api/projects"</span>)
+    <span class="tok-kw">public</span> List&lt;Project&gt; <span class="tok-fn">getAll</span>() {
+        <span class="tok-kw">return</span> service.<span class="tok-fn">findAll</span>();
+    }
+}</code></pre>
+                            <span class="code-tag">SPRING BOOT · JAVA · REACT</span>
+                        </div>
+                    </div>
+
+                    <div class="photo-card">
+                        <img src="./assets/img/perfil.png" alt="Foto de Stefany López">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de tecnologías -->
+            <div class="tech-card">
+                <div class="tech-card-glow" aria-hidden="true"></div>
+                <p class="tech-card-title">Tecnologías con las que desarrollo aplicaciones modernas</p>
+                <ul class="tech-list">
+                    <li>
+                        <span class="tech-icon" style="background:#12252b"><i class="fa-solid fa-leaf" style="color:#6dbf6b"></i></span>
+                        Spring Boot
+                    </li>
+                    <li>
+                        <span class="tech-icon" style="background:#2a1a12"><i class="fa-brands fa-java" style="color:#f28c33"></i></span>
+                        Java
+                    </li>
+                    <li>
+                        <span class="tech-icon" style="background:#0f2630"><i class="fa-brands fa-react" style="color:#61dafb"></i></span>
+                        React
+                    </li>
+                    <li>
+                        <span class="tech-icon" style="background:#111"><span class="tech-letter">N</span></span>
+                        Next.js
+                    </li>
+                    <li>
+                        <span class="tech-icon" style="background:#122b17"><i class="fa-brands fa-node-js" style="color:#83cd29"></i></span>
+                        Node.js
+                    </li>
+                    <li>
+                        <span class="tech-icon" style="background:#12202e"><i class="fa-solid fa-database" style="color:#4479a1"></i></span>
+                        MySQL
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ===== MISIÓN ===== -->
+        <section class="mission">
+            <p class="mission-text">
+            Desarrollando aplicaciones web escalables, soluciones de inteligencia artificial y experiencias digitales fluidas.
+            </p>
+        </section>
+
+        <!-- ===== SERVICIOS ===== -->
+        <section class="services" id="servicios">
+            <div class="services-grid">
+
+                <!-- Columna izquierda -->
+                <div class="services-intro">
+                    <h2>¿Cómo puedo<br>ayudarte?</h2>
+                    <p>
+                        Como Desarrolladora Full Stack, creo soluciones modernas, escalables y
+                        orientadas al usuario.
+                    </p>
+                </div>
+
+                <!-- Columna derecha: tarjetas de servicio -->
+                <div class="service-cards">
+                    <article class="service-card">
+                        <div class="service-top">
+                            <span class="service-icon"><i class="fa-solid fa-display"></i></span>
+                            <span class="service-num">01</span>
+                        </div>
+                        <h3>Desarrollo Web</h3>
+                        <p>Desarrollo de aplicaciones web modernas y responsivas utilizando tecnologías de vanguardia.</p>
+                        <div class="service-tags">
+                            <span>React</span><span>Next.js</span><span>Tailwind CSS</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top">
+                            <span class="service-icon"><i class="fa-solid fa-code"></i></span>
+                            <span class="service-num">02</span>
+                        </div>
+                        <h3>Desarrollo Backend</h3>
+                        <p>Construcción de APIs robustas y seguras con Spring Boot y arquitecturas escalables.</p>
+                        <div class="service-tags">
+                            <span>Java</span><span>Spring Boot</span><span>REST API</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top">
+                            <span class="service-icon"><i class="fa-solid fa-database"></i></span>
+                            <span class="service-num">03</span>
+                        </div>
+                        <h3>Bases de Datos</h3>
+                        <p>Diseño, implementación y optimización de bases de datos relacionales garantizando rendimiento y seguridad.</p>
+                        <div class="service-tags">
+                            <span>MySQL</span><span>SQL</span><span>JPA</span><span>Hibernate</span>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-top">
+                            <span class="service-icon"><i class="fa-solid fa-pen-ruler"></i></span>
+                            <span class="service-num">04</span>
+                        </div>
+                        <h3>Agentes de IA & Automatización</h3>
+                        <p>Desarrollo de agentes inteligentes para automatizar tareas y optimizar procesos.</p>
+                        <div class="service-tags">
+                            <span>n8n</span><span>LangChain</span><span>Microsoft Copilot </span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROYECTOS ===== -->
+        <section class="projects" id="proyectos">
+            <span class="eyebrow">My proyects</span>
+            <h2 class="projects-title">Proyectos recientes</h2>
+            <p class="projects-text">
+                Algunos de los productos que he construido de punta a punta, desde la
+                arquitectura backend hasta la interfaz final.
+            </p>
+
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-thumb project-thumb-1">
+                        <img src="./assets/img/proyecto.png" alt="pruecto_1">
+                    </div>
+                    <div class="project-body">
+                        <h3>E-commerce Full Stack</h3>
+                        <p>Plataforma de ventas online con carrito, pagos y panel de administración.</p>
+                        <div class="project-tags">
+                            <span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span>
+                        </div>
+                        <a href="https://trendyshop20.vercel.app/" class="project-link">Ver proyecto <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== EXPERIENCIA ===== -->
+        <section class="experience" id="experiencia">
+            <div class="exp-grid">
+
+                <div class="exp-card exp-cta">
+                    <h3>Conoce<br>mi experiencia</h3>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-head">
+                        <span class="exp-logo exp-logo-google"><i class="fa-solid fa-star"></i></span>
+                        <span class="exp-company">Imaginamos</span>
+                    </div>
+                    <p class="exp-role">Full stack developer</p>
+                    <span class="exp-dates">2024-2025</span>
+                </div>
+
+                
+
+                <div class="exp-card">
+                    <div class="exp-head">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="exp-company">clinica Genezen</span>
+                    </div>
+                    <p class="exp-role">Backend developer</p>
+                    <span class="exp-dates">2025-2026</span>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
